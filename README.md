@@ -24,7 +24,7 @@ Here you can find the Live Site....
 [todo-app](https://vedantmali05.github.io/todo-app/)
 
 ## Screenshot
-[Desktop Preview](design/desktop-preview.jpg)
+![Desktop Preview](design/desktop-preview.jpg)
 
 ### Built with
 
