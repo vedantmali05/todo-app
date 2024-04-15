@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body class="dark-theme">
+
+    <!-- BACKGROUND -->
+    <section class="bg">
+        <!-- desktop background -->
+        <img src="./assets/bg-desktop-dark.jpg" alt="" class="deskImg darkBg themeActive">
+        <img src="./assets/bg-desktop-light.jpg" alt="" class="deskImg lightBg themeInactive">
+        <!-- Mobile background -->
+        <img src="./assets/bg-mobile-dark.jpg" alt="" class="mobImg darkBg themeActive">
+        <img src="./assets/bg-mobile-light.jpg" alt="" class="mobImg lightBg themeInactive">
+    </section>
+
+    <!-- THE MAIN APP :) -->
+    <main class="appContainer">
+        <!-- HEADINGS -->
+        <section class="heading">
+            <!-- logo -->
+            <h1 class="logo">
+                TODO
+            </h1>
+
+            <!-- Theme Button -->
+            <div class="themeBox">
+                <!-- sun -->
+                <span class="sun dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z" />
+                    </svg>
+                </span>
+                <!-- moon -->
+                <span class="moon dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                        <path fill="#FFF" fill-rule="evenodd"
+                            d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z" />
+                    </svg>
+                </span>
+            </div>
+        </section>
+
+        <!-- CREATE NEW TASK  -->
+        <section class="addTask">
+            <div class="addBtn">
+            </div>
+            <div class="addInputBox">
+                <input type="text" class="addInput" placeholder="Create a new todo...">
+            </div>
+        </section>
+
+        <!-- TASKS -->
+        <section class="taskContainer">
+            <ul class="taskBox wrapper">
+
+            </ul>
+
+            <!-- TASK CONTROLS and DETAILS -->
+            <div class="controls">
+                <div class="items">
+                    <span class="num">0</span> items left
+                </div>
+                <ul class="filterBox">
+                    <li class="filter selected allFil" data-filter="all">All</li>
+                    <li class="filter activeFil" data-filter="active">Active</li>
+                    <li class="filter completeFil" data-filter="completed">Completed</li>
+                </ul>
+
+                <button class="clearBtn">Clear Completed</button>
+
+            </div>
+
+        </section>
+
+        <!-- SPECIAL FILTERBOX -->
+        <section class="filterContainer">
+            <ul class="filterBox">
+                <li class="filter selected allFil" data-filter="all">All</li>
+                <li class="filter activeFil" data-filter="active">Active</li>
+                <li class="filter completeFil" data-filter="completed">Completed</li>
+            </ul>
+        </section>
+
+        <!-- REORDER MESSAGE -->
+        <section class="reorder">
+            <h2>Drag and drop to reorder list</h2>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
