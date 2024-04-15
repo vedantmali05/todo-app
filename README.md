@@ -1,10 +1,12 @@
-# Todo App - Frontend Mentor
+# [Todo App - Frontend Mentor](https://vedantmali05.github.io/todo-app)
 
 ![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
 My challenge was to build out this todo app provided by [Frontend Mentor Challenges](https://www.frontendmentor.io/challenges) and get it looking as close to the design as possible.
+
+**Site Live at: [vedantmali05.github.io/todo-app](https://vedantmali05.github.io/todo-app)**
 
 Your users are able to:
 
